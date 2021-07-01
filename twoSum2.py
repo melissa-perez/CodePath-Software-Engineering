@@ -4,16 +4,16 @@ def twoNumberSum(array, targetSum):
 	# space consideration: O(N): might iterate whole array
 	# time consideration: O(N): might iterate whole array
     array_size = len(array)
-	delta_dict = {}
+    delta_dict = {}
 	
-	for i in range(array_size):
-		# calculate the missing value
-		delta = targetSum - array[i]
-		# if value in dictionary, then we have both summands
-		if delta in delta_dict:
-			return [delta, array[i]]
-		else:
-			delta_dict[array[i]] = delta
+    for i in range(array_size):
+	# calculate the missing value
+	delta = targetSum - array[i]
+	# if value in dictionary, then we have both summands
+	if delta in delta_dict:
+		return [delta, array[i]]
+	else:
+	   delta_dict[array[i]] = delta
 	# reach the end, no pair found
 	return []
 
