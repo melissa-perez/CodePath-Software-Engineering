@@ -16,3 +16,4 @@ def twoNumberSum(array, targetSum):
 			delta_dict[array[i]] = delta
 	# reach the end, no pair found
 	return []
+
