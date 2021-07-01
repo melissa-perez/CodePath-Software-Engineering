@@ -1,6 +1,6 @@
 def twoNumberSum(array, targetSum):
     # Write your code here.
-	# used array_element as key, since unique
+    # used array_element as key, since unique
 	# space consideration: O(N): might iterate whole array
 	# time consideration: O(N): might iterate whole array
     array_size = len(array)
