@@ -1,6 +1,8 @@
 '''
     Input: non-empty array of integers that is sorted.
     Output: new array of squares
+    time complexity is O(N) as each element is looked at
+    space complexity is O(N) as a new array of size N is created
 '''
 
 def sortedSquares(self, nums: List[int]) -> List[int]:
