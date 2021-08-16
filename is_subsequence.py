@@ -7,9 +7,6 @@
  
  
  """
- 
- 
- 
  def isValidSubsequence(array, sequence):
     array_length = len(array)
     seq_length = len(sequence)
