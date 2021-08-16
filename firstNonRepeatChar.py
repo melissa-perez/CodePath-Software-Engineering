@@ -32,6 +32,4 @@ def firstNonRepeatingCharacter(string):
         if char_freq[string[i]] == 1:
             return i
     # at this point all characters repeated
-
-
     return invalid_index
