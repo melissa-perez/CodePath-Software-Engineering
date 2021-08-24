@@ -1,6 +1,6 @@
 def isPalindrome(self, s: str) -> bool:
 	
-	s_length = len(s)
+    s_length = len(s)
     s_copy = s.lower()
     
 	left = 0
