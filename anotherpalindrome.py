@@ -1,9 +1,11 @@
 def isPalindrome(self, s: str) -> bool:
 	
 	s_length = len(s)
+    s_copy = s.lower()
+    
 	left = 0
 	right = s_length - 1
-	s_copy = s.lower()
+	
 	
 	while left < right:
 		if not s_copy[left].isalnum():
