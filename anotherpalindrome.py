@@ -16,7 +16,6 @@ def isPalindrome(self, s: str) -> bool:
             continue
         elif s_copy[left] != s_copy[right]:
             return False
-
         left += 1
         right -= 1
     return True
