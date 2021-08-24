@@ -5,8 +5,7 @@ def isPalindrome(self, s: str) -> bool:
     
     left = 0
     right = s_length - 1
-	
-	
+		
     while left < right:
         if not s_copy[left].isalnum():
             left += 1
