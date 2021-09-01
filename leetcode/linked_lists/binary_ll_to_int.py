@@ -27,4 +27,3 @@ class Solution:
             current_node = current_node.next
 
         return ll_length
- 
