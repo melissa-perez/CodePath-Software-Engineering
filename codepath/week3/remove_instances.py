@@ -5,7 +5,6 @@
 
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-
         front = ListNode(next=head)
         prev, curr = front, front.next
 
