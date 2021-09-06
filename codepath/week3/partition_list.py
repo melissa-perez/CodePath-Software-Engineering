@@ -3,14 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution:
-    def printList(self, head):
-        while head is not None:
-            print(head.val, " ",end="")
-            head = head.next
-        print()
-
-            
+class Solution:          
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         less = ListNode()
         less_runner = less
