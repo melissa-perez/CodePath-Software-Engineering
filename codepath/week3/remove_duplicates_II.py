@@ -7,6 +7,7 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head:
             return head
+
         front = ListNode(val=-102, next=head)
         prev, curr, runner = front, front.next, front.next.next
 
@@ -22,4 +23,5 @@ class Solution:
                 curr = runner
                 if curr is not None:
                     runner = runner.next
+
         return front.next
