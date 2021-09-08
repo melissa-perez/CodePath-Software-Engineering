@@ -17,3 +17,29 @@ Merge two sorted linked lists and return it as a new list. The new list should b
 ### Remove Duplicates
 
 Given a linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Can you do it without taking up extra memory?
+
+## Session 2
+This session deals with fixing buggy, given code.
+
+### Get Length of Linked List
+Given a singly linked list, return its length
+
+
+### Palindrome
+Given a linked list, determine if it is a palindrome.
+
+
+### Remove Duplicates from Sorted List
+Given a sorted linked list, delete all duplicates such that each element appear only once.
+
+
+
+### Rotate List
+Given a linked list, rotate the list to the right by k places, where k is non-negative.
+
+
+
+### Reverse Nodes in k group
+Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+
+k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
