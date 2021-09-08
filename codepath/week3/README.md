@@ -1,4 +1,4 @@
-# Linked Lists I
+# Linked List I
 ## Session 1
 
 ### Palindrome
