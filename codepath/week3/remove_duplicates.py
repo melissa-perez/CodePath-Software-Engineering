@@ -13,14 +13,23 @@ class Solution:
         if not head:
             return head
 
-        current_node = next_unique_node = head
+        front = ListNode(val=-102, next=head)
+        curr, runner = front.next, front.next.next
 
-        while next_unique_node is not None:
-            if next_unique_node.val != current_node.val:
-                current_node.next = next_unique_node
-                current_node = current_node.next
-            next_unique_node = next_unique_node.next
+        while runner is not None and curr is not None:
 
-        current_node.next = None
+            if runner.val != curr.val:
+                runner = runner.next
+                curr = curr.next
+            else:
 
-        return head
+                while runner is not None and runner.val == curr.val:
+                    runner = runner.next
+
+                curr.next = runner
+                curr = curr.next
+
+                if runner is not None:
+                    runner = runner.next
+
+        return front.next
