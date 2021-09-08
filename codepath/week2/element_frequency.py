@@ -1,4 +1,3 @@
-
 def element_frequency(nums, freq):
     freq_map = {}
     nums_length = len(nums)

@@ -17,7 +17,5 @@ def lengthOfLongestSubstring(self, s: str) -> int:
 		# not optimal
 		if len(longest_substring) < len(current_substring):
 			longest_substring = current_substring
-			
-	
+
 	return len(longest_substring)
-	
