@@ -1,4 +1,3 @@
-
 def longest_consecutive_subsequence(nums):
     nums_length = len(nums)
     nums_map = {}
