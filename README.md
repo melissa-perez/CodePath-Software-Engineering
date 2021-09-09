@@ -1,6 +1,4 @@
-# Summer 2021 Technical Interview Prep
+# CodePath Software Engineering/Technical Interview Prep
 
-A container for all practice problems attempted for 2022 internship season.
-I'm going to be attempting problems from various sources.
+A container for practice problems attempted during CodePath's Summer 2021 intermediate course(participant) and Fall 2021 advanced course(observer).
 
-There's a lot of bad formatting. Sorry everyone, copy and paste is not working 100%.
