@@ -32,10 +32,12 @@ def isPalindrome(node):
         node = node.next
         currentNode += 1
 
-    node = node.next
+    if fullLength % 2 != 0:
+        node = node.next
 
-    while (node is not None and currentNode > -1):
-        if (node.data != firstHalf[currentNode]):
+    while (node is not None and currentNode > 0):
+        if (node.data != firstHalf[currentNode - 1]):
+            # changed currentNode to currentNode - 1, out of index
             return False
         node = node.next
         currentNode -= 1
@@ -76,3 +78,21 @@ class Main:
         n4_1.next = n4_2
         n4_2.next = n4_3
         print("test case 4 passed: " + str(isPalindrome(n4_1)))
+
+        n4_1 = ListNode(1)
+        n4_2 = ListNode(2)
+        n4_3 = ListNode(1)
+        n4_4 = ListNode(1)
+        n4_1.next = n4_2
+        n4_2.next = n4_3
+        n4_3.next = n4_4
+        print("test case 5 passed: " + str(not isPalindrome(n4_1)))
+
+        n4_1 = ListNode(1)
+        n4_2 = ListNode(2)
+        n4_3 = ListNode(2)
+        n4_4 = ListNode(1)
+        n4_1.next = n4_2
+        n4_2.next = n4_3
+        n4_3.next = n4_4
+        print("test case 6 passed: " + str(isPalindrome(n4_1)))
